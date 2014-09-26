@@ -16,7 +16,6 @@
         <link type="text/css" rel="stylesheet" href="assets/css/calendar.css">
 		<script src="assets/lib/less/less-1.7.3.min.js"></script>
 		<link rel="stylesheet/less" type="text/css" href="assets/less/theme.less">
-		
         <link rel="stylesheet" href="assets/css/theme.css">
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -191,12 +190,12 @@
 		                        <li><a href=""><i class="icon-angle-right"></i> Revisar información financiera de empleados</a></li>
 		                    </ul>
 					</li>
-					<li><a href="calendar.html"><i class="icon-calendar icon-large"></i> Calendario</a></li>
+					<li ><a ><i id="boton-calendario" class="icon-calendar icon-large"></i> Calendario</a></li>
 					<li class="nav-divider"></li>
 					<li><a href="importXLS.html"><i class="icon-download icon-large"></i> Importar/Exportar archivos Excel</a></li>
                 </ul>
                 <!-- END MAIN NAVIGATION -->
-
+				
             </div>
             <!-- END LEFT -->
 
@@ -383,6 +382,108 @@
                 </div>
                 <!-- /.outer -->
             </div>
+			
+			
+				<!-- BEGIN CALENDAR -->
+					<!-- #content -->
+            <div id="content" class="calendario">
+                <!-- .outer -->
+                <div class="container-fluid outer">
+                    <div class="row-fluid">
+                        <!-- .inner -->
+                        <div class="span12 inner">
+                            <div class="row-fluid">
+                                <div class="span12 ">
+                                    <div class="box">
+                                        <header>
+                                            <h5>Calendar</h5>
+                                        </header>
+                                        <div class="body">
+                                            <div class="row-fluid">
+                                                <div class="span3">
+                                                    <div class="well well-small">
+                                                        <div id="add-event-form">
+                                                            <fieldset>
+                                                                <legend>Add Custom Event</legend>
+                                                                <span class="help-inline">Event Title</span>
+                                                                <input id="title" name="title" type="text" placeholder="event title"
+                                                                       class="input-block-level">
+                                                                <label class="radio">
+                                                                    <input type="radio" name="priority" value="label" checked>
+                                                                    <span class="label">default</span>
+                                                                </label>
+                                                                <label class="radio">
+                                                                    <input type="radio" name="priority"
+                                                                           value="label label-important">
+                                                                    <span class="label label-important">important</span>
+                                                                </label>
+                                                                <label class="radio">
+                                                                    <input type="radio" name="priority" value="label label-warning">
+                                                                    <span class="label label-warning">warning</span>
+                                                                </label>
+                                                                <label class="radio">
+                                                                    <input type="radio" name="priority" value="label label-success">
+                                                                    <span class="label label-success">success</span>
+                                                                </label>
+                                                                <label class="radio">
+                                                                    <input type="radio" name="priority" value="label label-info">
+                                                                    <span class="label label-info">info</span>
+                                                                </label>
+                                                                <label class="radio">
+                                                                    <input type="radio" name="priority" value="label label-inverse">
+                                                                    <span class="label label-inverse">inverse</span>
+                                                                </label>
+                                                                <br>
+                                                                <button id="add-event" type="button" class="btn">Add Event</button>
+                                                            </fieldset>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="well well-small">
+                                                        <h4>Draggable Events</h4>
+                                                        <ul id='external-events' class="inline">
+                                                            <li class="external-event"><span class="label">My Event 1</span></li>
+                                                            <li class="external-event"><span class="label label-important">My Event 2</span>
+                                                            </li>
+                                                            <li class="external-event"><span
+                                                                    class="label label-success">My Event 3</span>
+                                                            </li>
+                                                            <li class="external-event"><span
+                                                                    class="label label-warning">My Event 4</span>
+                                                            </li>
+                                                            <li class="external-event"><span
+                                                                    class="label label-info">My Event 5</span>
+                                                            </li>
+                                                            <li class="external-event"><span
+                                                                    class="label label-inverse">My Event 6</span>
+                                                            </li>
+                                                        </ul>
+
+                                                        <label class="checkbox inline" for='drop-remove'>
+                                                            <input type="checkbox" id="drop-remove">
+                                                            remove after drop
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div id='calendar' class="span9"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.inner -->
+                    </div>
+                    <!-- /.row-fluid -->
+                </div>
+                <!-- /.outer -->
+            </div>
+            <!-- /#content -->
+			<!-- #push do not remove -->
+            <div id="push"></div>
+            <!-- /#push -->
+			<style> .calendario{display: none;} </style>
+			<!-- END CALENDAR -->
             <!-- END CONTENT -->
 
 
@@ -447,12 +548,15 @@
         <script src="assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
         
         <script src="assets/js/main.js"></script>
-        
 
         <script type="text/javascript">
             $(function() {
                 dashboard();
-            });
+            }
+				function(){
+					$("#boton-calendario").click(function(){$(".calendario").css("display":"inline")
+					});
+				});
         </script>
 
         <script type="text/javascript" src="assets/js/style-switcher.js"></script>
