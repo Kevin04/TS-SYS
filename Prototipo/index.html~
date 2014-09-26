@@ -246,21 +246,7 @@
                                 <span>warning</span>
                                 <span class="label label-warning">+25</span>
                             </a>
-                            <a class="quick-btn" href="#">
-                                <i class="icon-external-link icon-2x"></i>
-                                <span>&pi;</span>
-                                <span class="label btn-metis-2">3.14159265</span>
-                            </a>
-                            <a class="quick-btn" href="#">
-                                <i class="icon-lemon icon-2x"></i>
-                                <span>&eacute;</span>
-                                <span class="label btn-metis-4">2.71828</span>
-                            </a>
-                            <a class="quick-btn" href="#">
-                                <i class="icon-glass icon-2x"></i>
-                                <span>&phi;</span>
-                                <span class="label btn-metis-3">1.618</span>
-                            </a>
+                            
                         </div>
                         <hr>
                         <div class="row-fluid">
@@ -279,50 +265,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="span4">
-                                <div class="box">
-                                    <header>
-                                        <div class="icons"><i class="icon-tags"></i>
-                                        </div>
-                                        <h5>Todos</h5>
-                                    </header>
-                                    <div class="block">
-                                        <table class="table table-striped">
-                                            <tbody>
-                                                <tr>
-                                                    <td>sdg</td>
-                                                    <td>dsfg</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>sdfg</td>
-                                                    <td>dfg</td>
-                                                </tr>
-                                                <tr class="success">
-                                                    <td>dsfg</td>
-                                                    <td>dfg</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>dfgh</td>
-                                                    <td>dfh</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>dfgh</td>
-                                                    <td>dfhg</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>ddfghdfgh</td>
-                                                    <td>dfh</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>dfh</td>
-                                                    <td>ddfhdh</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <!--BEGIN LATEST COMMENT-->
                         <!-- .row-fluid -->
                         <div class="row-fluid">
@@ -431,7 +373,7 @@
         <!-- END FILE UPLOAD -->
         <style>
             .files {
-                //display: none;
+                display: none;
             }
         </style>
 
